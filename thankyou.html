@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+</head>
+
+<body>
+    <p>Thanks for your inquiry<span id="name"></span>!</p>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://rhildred.github.io/queryHash/queryhash.js"></script>
+    <script>
+        oQueryParams = getQueryHash()
+        alert (JSON.stringify (oQueryParams));
+        $("#name").append(oQueryParams.Name);
+
+    </script>
+</body>
+
+</html>
